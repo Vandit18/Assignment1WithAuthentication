@@ -7,7 +7,7 @@ var User = require('../models/user');
 /* Render home page. */
 router.get('/', function (req, res, next) {
     res.render('index', {
-        title: 'Home',
+        title: 'My Portfolio',
         displayName: req.user ? req.user.displayName : ''
     });
 });
@@ -61,5 +61,24 @@ router.get('/logout', function (req, res){
   req.logout();
   res.redirect('/');
 });
+
+/* Render home page. */
+router.get('/about', function (req, res, next) {
+    res.render('about', {
+        title: 'About',
+        displayName: req.user ? req.user.displayName : ''
+    });
+});
+
+/* GET Contact page */
+router.get('/Contact', function (req, res, next) {
+    res.render('Contact');
+});
+
+/* GET Service page */
+router.get('/services', function (req, res, next) {
+    res.render('services');
+});
+
 
 module.exports = router;
