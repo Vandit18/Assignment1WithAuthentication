@@ -8,7 +8,7 @@ var Schema = mongoose.Schema;
 // Define our user Schema
 var ContactSchema = new Schema({
 	username: String,
-	password: String,
+	//password: String,
 	email: String,
 	displayName: String,
 	salt: String,

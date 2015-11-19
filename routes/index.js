@@ -70,14 +70,12 @@ router.get('/about', function (req, res, next) {
     });
 });
 
-/* GET Contact page */
-router.get('/Contact', function (req, res, next) {
-    res.render('Contact');
-});
-
 /* GET Service page */
-router.get('/services', function (req, res, next) {
-    res.render('services');
+router.get('/service', function (req, res, next) {
+    res.render('service', {
+        title: 'Service',
+        displayName: req.user ? req.user.displayName : ''
+    });
 });
 
 
