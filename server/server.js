@@ -4,8 +4,8 @@
  * Module dependencies.
  */
 
-var app = require('./app');
-var debug = require('debug')('COMP2068-Week8:server');
+var app = require('../app');
+var debug = require('debug')('passport:server');
 var http = require('http');
 
 /**

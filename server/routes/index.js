@@ -76,6 +76,15 @@ router.get('/service', function (req, res, next) {
         title: 'Service',
         displayName: req.user ? req.user.displayName : ''
     });
+    
+    /* Show Todo List Page */
+/*router.get('/todolist', function (req, res, next) {
+
+        res.render('todolist', {
+            title: 'Todos',
+            displayName: req.user ? req.user.displayName : '',
+            username: req.user ? req.user.username : '' 
+        });*/
 });
 
 
